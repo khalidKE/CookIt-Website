@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookIt - Recipe Filter App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>CookIt</h1>
+    </header>
+    <div class="filter-container">
+        <button class="filter-btn vegan" onclick="filterRecipes('vegan')">Vegan</button>
+        <button class="filter-btn gluten-free" onclick="filterRecipes('gluten-free')">Gluten-Free</button>
+        <button class="filter-btn keto" onclick="filterRecipes('keto')">Keto</button>
+        <button class="filter-btn vegetarian" onclick="filterRecipes('vegetarian')">Vegetarian</button>
+    </div>
+    <div class="recipe-container" id="recipeContainer">
+        <!-- Recipe cards will be populated by JavaScript -->
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
